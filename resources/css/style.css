@@ -1,1 +1,7 @@
 /* Global Style */
+.container {
+  background-image: image("./resources/images/Background@72x-100.jpg");
+  
+}
+
+/* Font Code */
