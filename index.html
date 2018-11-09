@@ -74,13 +74,15 @@ table {
     font-weight: 500;
     font-size: 3rem;
     color: #7ba4dd;
-    text-align: right;
   }
 
   h2 {
     font-size: 1.25rem;
-    text-align: right;
-    display:block;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 1.5rem;
   }
 
   body {
@@ -100,12 +102,14 @@ table {
   }
 
   .container-fluid {
-    max-width: 90%;
+    max-width: 100%;
+    padding-top: 4.2rem;
 
   }
 
   .globe-img {
-    width: 50%;
+    width: 60%;
+    margin: -3rem -4rem -4rem 0
   }
 
   .right-content {
@@ -115,36 +119,29 @@ table {
 
   .empower-img {
     max-width: 100%;
-    padding: 4.2rem 0 2.1rem 0;
-    align: right;
-    display: block;
-    margin-right: 0;
-    margin-left: auto;
+    padding: 0 0 .5rem 0;
+
   }
 
   }
 
   .empower-img img{
-    max-width: 600px;
+    max-width: 100%;
 
   }
 
   .powered-by {
-    max-height: 30%;
-    max-width: auto;
-    padding: 2.1rem 0 2.1rem;
-    align: right;
+    padding: .5rem 0 .5rem 0;
+    max-width: 8rem;
   }
 
   .powered-by img {
-    display: block;
-    margin-right: 0;
-    margin-left: auto;
+    width: 100%;
   }
 
   .save-the-date {
     max-width: 100%;
-    padding: 2.1rem 0 2.1rem;
+    padding: .5rem 0 2.1rem;
     text-align: right;
     align: right;
     display: block;
@@ -158,46 +155,125 @@ table {
     text-align: right;
   }
 
-  .calender img {
+  .calender {
     max-width: 100%;
+  }
+
+  .calender img {
+    width: 100%;
     text-align: right;
-    align: right;
-    display: block;
-    margin-right: -6rem;
+    margin-right: -13rem;
     margin-left: auto;
+  }
+
+  .call-to-action {
+    text-align: center;
+    padding: 4.2rem 0 4.2rem 0;
+  }
+
+  D1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #001c71;
+
+  }
+
+  .event-description {
+    padding: 0 0 4rem 0
+
+  }
+
+  .heading-img img{
+    max-height: 3rem;
+    margin-left: -2rem;
+  }
+
+  .event-line {
+    padding: .5rem 0 .5rem 0;
+    max-width: 100%;
+  }
+
+
+  .speaker-button {
+    padding: 1rem 1rem 1rem 0;
+    max-width: 20%;
+
+  }
+
+  .speaker-button img{
+    width: 100%;
+    align: right;
+    padding: 1rem 1rem 1rem 0;
+  }
+
+  .ktl-logo {
+    padding: 1rem 0 0 0;
+  }
+
+  .ktl-logo-img {
+    padding-bottom: .1rem;
+
+  }
+
+  .ktl-logo-img img {
+    max-width: 100%;
+
+  }
+
+  .social {
+    padding: 0 .10rem 0 .10rem;
+    align-content: center;
+
+  }
+
+  .social img {
+    max-width: 100%;
+  }
+
+  .footer {
+    Background-color: #001c71;
+    padding: 2rem 0 1rem 0;
+    margin-bottom: -2rem;
+  }
+
+  .line-content {
+    padding: 0 0 0 4rem
+
+  }
+
+  .header {
+    padding: 2rem 0 0 0;
+
   }
 
 
 </style>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="">
     <div class="row header">
       <div class="col-7 globe-img">
         <img src="resources/images/Sphere.svg" alt="globe">
       </div>
-      <div class="col-5 right-content">
-        <div class="row conference-logo">
+      <div class="col-5">
+        <div class="row conference-logo justify-content-end">
           <img class="empower-img" src="resources/images/EMPOWER 2019.svg" alt="Empower 2019 Logo">
         </div>
-        <div class="row powered-by">
-          <img src="resources/images/Powered By.svg" alt="powered by KTL">
+        <div class="row powered-by img-fluid justify-content-end">
+          <img src="resources/images/Powered By.svg" class="" alt="powered by KTL">
 
         </div>
-        <div class=" row Save-The-Date">
-          <div class="row line date">
-            <h1 class="text-right">Save The Date</h1>
-            <h1>May 15-16 2019</h1>
+        <div class=" row save-the-date ">
+          <div class="row line date justify-content-end">
+            <h1 class="text-right">Save The Date<br>May 15-16 2019</h1>
 
           </div>
-          <div class="row line chevy-chase">
-            <h2>Microsoft Technology Center</h2>
-            <br>
-            <h2>Chevy Chase, MD</h2>
+          <div class="row line chevy-chase justify-content-end">
+            <h2 class="text-right">Microsoft Technology Center<br>Chevy Chase, MD</h2>
 
           </div>
-          <div class="row line calender">
-            <img src="resources/images/Add to Calender Button.svg" alt="add to calender">
+          <div class="row line calender justify-content-end">
+            <img src="resources/images/Add to Calender Button.svg" class="float-right" alt="add to calender">
 
           </div>
         </div>
@@ -205,13 +281,94 @@ table {
     </div>
 
     <div class="row call-to-action">
+      <div class="col-2">
+
+      </div>
+      <div class="col-8">
+        <d1 class="text-center"> Start Your <br> Digital Transformation </d1>
+      </div>
+      <div class="col-2">
+
+      </div>
 
     </div>
 
+    <div class="event-description row">
+      <div class="col-7">
+        <div class="row heading-img event-line">
+          <img src="resources/images/2 days.svg" alt="">
+        </div>
+        <div class="row event-line line-content">
+          <p>Of Speakers and Training on new and emerging Dynamics, PowerBI, Azure and Office 365 technologies. </p>
+
+        </div>
+        <div class="row heading-img event-line">
+          <img src="resources/images/20 sessions.svg" alt="">
+
+        </div>
+        <div class="row event-line line-content">
+          <p>From industry experts and professionals including Microsoft, to help you get prepared to protect your data, view your data and increase efficiency within your company</p>
+
+        </div>
+        <div class="row heading-img event-line">
+          <img src="resources/images/150 people.svg" alt="">
+
+        </div>
+        <div class="row event-line line-content">
+          <p>Ranging from CEO’s, CFO’s, and IT Profesionals. Network and mingle with industry leaders; grow your commnity! </p>
+
+        </div>
+
+      </div>
+      <div class="col-5 speaker-button justify-content-end">
+        <div class="row">
+
+        </div>
+        <img src="resources/images/Speaker_Sponsor_Button.svg" class="float-right" alt="">
+
+      </div>
+
+    </div>
+
+
+    </div>
     <footer class="footer">
+      <div class="row">
+        <div class="col-5">
+          <img src="resources/images/dots left.svg" alt="">
+
+        </div>
+        <div class="col-2 ktl-logo">
+          <div class="row ktl-logo-img text-center">
+            <img src="resources/images/KTL_Logo_Gradient_Lb_W.svg" alt="">
+
+          </div>
+          <div class="row">
+            <div class="col-3 social">
+              <img src="resources/images/Twitter_fl.svg" alt="">
+            </div>
+            <div class="col-3 social">
+              <img src="resources/images/Linked In_ML.svg" alt="">
+            </div>
+            <div class="col-3 social">
+              <img src="resources/images/Youtube_mr.svg" alt="">
+            </div>
+            <div class="col-3 social">
+              <img src="resources/images/Facebook_fr.svg" alt="">
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-5">
+          <img src="resources/images/dots right.svg" alt="">
+
+        </div>
+
+      </div>
 
     </footer>
-    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
