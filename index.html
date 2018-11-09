@@ -109,30 +109,34 @@ table {
 
   .globe-img {
     width: 60%;
-    margin: -3rem -4rem -4rem 0
+    padding: 1rem 0 0 0;
+    margin: -3rem -4rem -4rem 2rem;
   }
 
   .right-content {
+    padding: 0 4rem 0 0;
+  }
+
+
+  .empowered-img {
     padding: 0 0 0 0;
-  }
-
-
-  .empower-img {
-    max-width: 100%;
-    padding: 0 0 .5rem 0;
+    width: 100%;
+    margin-right: -.5rem;
+    margin-left: auto;
 
   }
 
-  }
-
-  .empower-img img{
-    max-width: 100%;
+  .empowered-img a {
+    width: 100%;
+    height: 150px;
 
   }
 
   .powered-by {
-    padding: .5rem 0 .5rem 0;
+    padding: 0 0 0 0;
     max-width: 8rem;
+    margin-right: -1rem;
+    margin-left: auto;
   }
 
   .powered-by img {
@@ -141,7 +145,7 @@ table {
 
   .save-the-date {
     max-width: 100%;
-    padding: .5rem 0 2.1rem;
+    padding: 0 0 .5rem;
     text-align: right;
     align: right;
     display: block;
@@ -159,7 +163,7 @@ table {
     max-width: 100%;
   }
 
-  .calender img {
+  .calender a {
     width: 100%;
     text-align: right;
     margin-right: -13rem;
@@ -168,7 +172,7 @@ table {
 
   .call-to-action {
     text-align: center;
-    padding: 4.2rem 0 4.2rem 0;
+    padding: 2.4rem 0 4.2rem 0;
   }
 
   D1 {
@@ -195,15 +199,13 @@ table {
 
 
   .speaker-button {
-    padding: 1rem 1rem 1rem 0;
-    max-width: 20%;
+    padding: 1rem 4rem 1rem 0;
+    max-width: 25%;
 
   }
 
-  .speaker-button img{
+  .speaker-button a{
     width: 100%;
-    align: right;
-    padding: 1rem 1rem 1rem 0;
   }
 
   .ktl-logo {
@@ -215,8 +217,9 @@ table {
 
   }
 
-  .ktl-logo-img img {
-    max-width: 100%;
+  .ktl-logo-img a {
+    width: 100%;
+    padding-bottom: 1rem;
 
   }
 
@@ -226,8 +229,8 @@ table {
 
   }
 
-  .social img {
-    max-width: 100%;
+  .social a {
+    width: 100%;
   }
 
   .footer {
@@ -248,19 +251,23 @@ table {
 
 
 </style>
+
+
+<script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+
   </head>
   <body>
     <div class="">
-    <div class="row header">
-      <div class="col-7 globe-img">
+    <div class="row header d-flex justify-content-between">
+      <div class="col-6 globe-img">
         <img src="resources/images/Sphere.svg" alt="globe">
       </div>
-      <div class="col-5">
-        <div class="row conference-logo justify-content-end">
-          <img class="empower-img" src="resources/images/EMPOWER 2019.svg" alt="Empower 2019 Logo">
+      <div class="col-6 right-content">
+        <div class="row empowered-img">
+          <a class="float-right" href="https://www.ktlsolutions.com/events/empower-2019/"><img class="img-fluid float-right" src="resources/images/EMPOWER 2019.svg" alt="Empower 2019 Logo"></a>
         </div>
-        <div class="row powered-by img-fluid justify-content-end">
-          <img src="resources/images/Powered By.svg" class="" alt="powered by KTL">
+        <div class="row powered-by justify-content-end">
+          <img src="resources/images/Powered By.svg" class="img-fluid float-right" alt="powered by KTL">
 
         </div>
         <div class=" row save-the-date ">
@@ -273,7 +280,8 @@ table {
 
           </div>
           <div class="row line calender justify-content-end">
-            <img src="resources/images/Add to Calender Button.svg" class="float-right" alt="add to calender">
+            <a href="https://www.ktlsolutions.com/events/"><img src="resources/images/Add to Calender Button.svg" class="img-fluid" alt="add to calender"></a>
+
 
           </div>
         </div>
@@ -285,25 +293,27 @@ table {
 
       </div>
       <div class="col-8">
-        <d1 class="text-center"> Start Your <br> Digital Transformation </d1>
+        <a href="https://www.ktlsolutions.com/events/empower-2019/"><d1 class="text-center"> Start Your <br> Digital Transformation </d1></a>
+
       </div>
       <div class="col-2">
 
       </div>
 
+
     </div>
 
-    <div class="event-description row">
+    <div class="event-description row d-flex justify-content-between">
       <div class="col-7">
         <div class="row heading-img event-line">
-          <img src="resources/images/2 days.svg" alt="">
+          <img src="resources/images/2 days.svg" class="img-fluid" alt="">
         </div>
         <div class="row event-line line-content">
           <p>Of Speakers and Training on new and emerging Dynamics, PowerBI, Azure and Office 365 technologies. </p>
 
         </div>
         <div class="row heading-img event-line">
-          <img src="resources/images/20 sessions.svg" alt="">
+          <img src="resources/images/20 sessions.svg" class="img-fluid" alt="">
 
         </div>
         <div class="row event-line line-content">
@@ -311,7 +321,7 @@ table {
 
         </div>
         <div class="row heading-img event-line">
-          <img src="resources/images/150 people.svg" alt="">
+          <img src="resources/images/150 people.svg" class="img-fluid" alt="">
 
         </div>
         <div class="row event-line line-content">
@@ -320,11 +330,11 @@ table {
         </div>
 
       </div>
-      <div class="col-5 speaker-button justify-content-end">
-        <div class="row">
+      <div class="col-5 speaker-button">
+          <a href="https://www.ktlsolutions.com/empower-2019-speaker-submission/"><img src="resources/images/Speaker_Sponsor_Button.svg" class="img-fluid float-right" alt=""></a>
 
-        </div>
-        <img src="resources/images/Speaker_Sponsor_Button.svg" class="float-right" alt="">
+
+
 
       </div>
 
@@ -340,21 +350,26 @@ table {
         </div>
         <div class="col-2 ktl-logo">
           <div class="row ktl-logo-img text-center">
-            <img src="resources/images/KTL_Logo_Gradient_Lb_W.svg" alt="">
+            <a href="https://www.ktlsolutions.com/"><img src="resources/images/KTL_Logo_Gradient_Lb_W.svg" class="img-fluid" alt=""></a>
+
 
           </div>
           <div class="row">
             <div class="col-3 social">
-              <img src="resources/images/Twitter_fl.svg" alt="">
+              <a href="https://twitter.com/ktlsolutionsinc"><img src="resources/images/Twitter_fl.svg" class="img-fluid" alt=""></a>
+
             </div>
             <div class="col-3 social">
-              <img src="resources/images/Linked In_ML.svg" alt="">
+              <a href="https://www.linkedin.com/company/233426?trk=tyah"><img src="resources/images/Linked In_ML.svg" class="img-fluid" alt=""></a>
+
             </div>
             <div class="col-3 social">
-              <img src="resources/images/Youtube_mr.svg" alt="">
+              <a href="https://www.youtube.com/channel/UCrW4ZtdiBaSvVFdpmm54S4A"><img src="resources/images/Youtube_mr.svg" class="img-fluid" alt=""></a>
+
             </div>
             <div class="col-3 social">
-              <img src="resources/images/Facebook_fr.svg" alt="">
+              <a href="https://www.facebook.com/KTL-Solutions-Inc-161400960648205/"><img src="resources/images/Facebook_fr.svg" class="img-fluid" alt=""></a>
+
 
             </div>
 
