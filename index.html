@@ -107,6 +107,48 @@ table {
 
   }
 
+  .empower {
+    width: 60%;
+  }
+
+  .powered {
+    margin: -4rem 0;
+  }
+
+  .globe {
+    width: 60%;
+    margin: -4rem 0 -8rem 0;
+  }
+  .save-the-date {
+    max-width: 100%;
+    padding: 0 0 .5rem;
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .line {
+    padding: .5rem 0 .5rem 0;
+    align: right;
+    text-align: right;
+  }
+
+  .calender {
+    width: 100%;
+  }
+
+  .calender a {
+    width: 40%;
+    text-align: right;
+    margin-right: -13rem;
+    margin-left: auto;
+  }
+
+  .call-to-action {
+    text-align: center;
+    padding: 2.4rem 0 4.2rem 0;
+  }
+  /*
   .globe-img {
     width: 60%;
     padding: 1rem 0 0 0;
@@ -128,7 +170,6 @@ table {
 
   .empowered-img a {
     width: 100%;
-    height: 150px;
 
   }
 
@@ -142,38 +183,8 @@ table {
   .powered-by img {
     width: 100%;
   }
+*/
 
-  .save-the-date {
-    max-width: 100%;
-    padding: 0 0 .5rem;
-    text-align: right;
-    align: right;
-    display: block;
-    margin-right: 0;
-    margin-left: auto;
-  }
-
-  .line {
-    padding: .5rem 0 .5rem 0;
-    align: right;
-    text-align: right;
-  }
-
-  .calender {
-    max-width: 100%;
-  }
-
-  .calender a {
-    width: 100%;
-    text-align: right;
-    margin-right: -13rem;
-    margin-left: auto;
-  }
-
-  .call-to-action {
-    text-align: center;
-    padding: 2.4rem 0 4.2rem 0;
-  }
 
   D1 {
     font-size: 3rem;
@@ -206,6 +217,10 @@ table {
 
   .speaker-button a{
     width: 100%;
+  }
+
+  .speaker-button a img {
+    width:100%;
   }
 
   .ktl-logo {
@@ -245,10 +260,49 @@ table {
   }
 
   .header {
-    padding: 2rem 0 0 0;
+    padding: 2rem 2rem 0 2rem;
 
   }
 
+@media only screen and (max-width: 767px) {
+  .speaker-button {
+    padding: 3rem 0 0 0;
+    max-width: 100%;
+
+  }
+
+  .speaker-button a {
+    width: 25%;
+  }
+
+  .powered {
+    margin: -2rem 0;
+  }
+
+  .empower {
+    width: 100%;
+  }
+
+  .powered-by img {
+    height: 6rem;
+  }
+
+}
+@media only screen and (max-width: 576px) {
+
+  .speaker-button a {
+    width: 50%;
+  }
+
+  .powered {
+    margin: 2rem 0;
+  }
+
+  .globe {
+    width: 100%;
+    margin: -4rem 0 -2rem 0;
+  }
+}
 
 </style>
 
@@ -257,12 +311,52 @@ table {
 
   </head>
   <body>
-    <div class="">
+    <div class="row header">
+      <div class="col">
+        <div class="row  justify-content-end">
+          <div class="col-7 empower">
+            <a class="" href="https://www.ktlsolutions.com/events/empower-2019/"><img class="" src="https://www.ktlsolutions.com/wp-content/uploads/2018/11/EMPOWER-2019.svg" alt="Empower 2019 Logo"></a>
+
+          </div>
+        </div>
+        <div class="row powered d-flex justify-content-between">
+          <div class="col-8 globe">
+            <img src="https://www.ktlsolutions.com/wp-content/uploads/2018/11/Sphere.svg" alt="globe">
+
+          </div>
+          <div class="col-2 align-self-center powerd-by">
+            <img src="https://www.ktlsolutions.com/wp-content/uploads/2018/11/Powered-By.svg" class="img-fluid float-right" alt="powered by KTL">
+
+          </div>
+        </div>
+
+        <div class=" row save-the-date justify-content-end">
+          <div class="row line date justify-content-end">
+            <h1 class="text-right">Save The Date<br>May 15-16 2019</h1>
+
+          </div>
+          <div class="row line chevy-chase justify-content-end">
+            <h2 class="text-right">Microsoft Technology Center<br>Chevy Chase, MD</h2>
+
+          </div>
+          <div class="row line calender justify-content-end">
+            <a href="https://www.ktlsolutions.com/events/"><img src="https://www.ktlsolutions.com/wp-content/uploads/2018/11/Add-to-Calender-Button.svg" class="img-fluid" alt="add to calender"></a>
+
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!--
     <div class="row header d-flex justify-content-between">
-      <div class="col-6 globe-img">
+      <div class="col-md-6 globe-img">
         <img src="https://www.ktlsolutions.com/wp-content/uploads/2018/11/Sphere.svg" alt="globe">
       </div>
-      <div class="col-6 right-content">
+      <div class="col-md-6 right-content">
         <div class="row empowered-img">
           <a class="float-right" href="https://www.ktlsolutions.com/events/empower-2019/"><img class="img-fluid float-right" src="https://www.ktlsolutions.com/wp-content/uploads/2018/11/EMPOWER-2019.svg" alt="Empower 2019 Logo"></a>
         </div>
@@ -287,7 +381,7 @@ table {
         </div>
       </div>
     </div>
-
+    -->
     <div class="row call-to-action">
       <div class="col-12">
         <a href="https://www.ktlsolutions.com/events/empower-2019/"><d1 class="text-center"> Start Your <br> Digital Transformation </d1></a>
@@ -299,7 +393,7 @@ table {
     </div>
 
     <div class="event-description row d-flex justify-content-between">
-      <div class="col-7">
+      <div class="col-md-7">
         <div class="row heading-img event-line">
           <img src="https://www.ktlsolutions.com/wp-content/uploads/2018/11/2-days.svg" class="img-fluid" alt="">
         </div>
@@ -325,8 +419,8 @@ table {
         </div>
 
       </div>
-      <div class="col-5 speaker-button">
-          <a href="https://www.ktlsolutions.com/empower-2019-speaker-submission/"><img src="resources/images/Speaker_Sponsor_Button.svg" class="img-fluid float-right" alt=""></a>
+      <div class="col-md-5 speaker-button d-flex justify-content-center">
+          <a href="https://www.ktlsolutions.com/empower-2019-speaker-submission/"><img src="resources/images/Speaker_Sponsor_Button.svg" class="" alt=""></a>
 
 
 
